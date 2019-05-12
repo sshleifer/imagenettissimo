@@ -1,7 +1,7 @@
 # imagenettissimo
 Little baby datasets
 
-### Setup
+## Setup
 
 Fastai is already installed on the CS231n VM.
 
@@ -13,4 +13,20 @@ conda install -c fastai fastai
 Sanity check: train on Imagenette 128px for 1 epoch:
 ```
 python train_imagenette.py --epochs 1 --bs 128 --lr 3e-3 --mixup 0 --size 128
+```
+
+## Run
+
+Edit params.txt
+
+```
+python main.py
+```
+
+
+## Dev on GCloud
+
+ex. rsync with local filesystem:
+```
+rsync -avhr ./ eprokop@34.83.17.89:/home/eprokop/imagenettissimo
 ```
